@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 28, 2019 at 05:38 PM
+-- Generation Time: Apr 17, 2019 at 05:13 PM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 5.6.32
 
@@ -46,10 +46,13 @@ CREATE TABLE `caleg` (
 --
 
 INSERT INTO `caleg` (`id`, `kel`, `tps`, `score1`, `score2`, `score3`, `scorehj`, `score5`, `score6`, `score7`) VALUES
-(26, 'men', 1, 5, 5, 5, 100, 5, 10, 11),
-(27, 'men', 0, 5, 1, 1, 20, 1, 1, 1),
+(26, 'men', 20, 5, 5, 5, 100, 5, 10, 9),
 (28, 'dat', 1, 5, 5, 70, 66, 9, 9, 7),
-(29, 'dat', 2, 9, 9, 8, 99, 10, 7, 18);
+(29, 'dat', 2, 9, 9, 8, 99, 10, 7, 18),
+(30, 'tan', 22, 1, 1, 1, 1, 11, 1, 1),
+(31, 'tun', 21, 1, 1, 11, 111, 1, 1, 1),
+(32, 'tim', 22, 1, 1, 11, 1111, 1, 11, 1),
+(33, 'tan', 1, 2, 2, 22, 2, 12, 121, 3);
 
 -- --------------------------------------------------------
 
@@ -73,10 +76,14 @@ INSERT INTO `partai` (`id`, `kel`, `name`, `score`) VALUES
 (2, 'men', 'Gerindra', 15),
 (3, 'men', 'PDI Perjuangan', 3),
 (4, 'men', 'Golkar', 471),
-(5, 'men', 'Nasdem', 6),
+(5, 'men', 'Nasdem', 3),
 (6, 'men', 'Partai Garuda', 3),
 (7, 'dat', 'Golkar', 356),
-(8, 'dat', 'Partai', 10);
+(8, 'dat', 'Partai', 10),
+(9, 'tim', 'FF', 12),
+(10, 'tan', 'HMM', 12),
+(11, 'kar', 'FQ', 11),
+(12, 'tan', 'SEL', 22);
 
 --
 -- Indexes for dumped tables
@@ -102,13 +109,13 @@ ALTER TABLE `partai`
 -- AUTO_INCREMENT for table `caleg`
 --
 ALTER TABLE `caleg`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `partai`
 --
 ALTER TABLE `partai`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
