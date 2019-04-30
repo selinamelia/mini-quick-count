@@ -20,6 +20,7 @@ switch ($kel) {
 
     case 'Tanah Tinggi':
         $kel='tan';
+        break;
 
     case 'Timbang Langkat':
         $kel='tim';
